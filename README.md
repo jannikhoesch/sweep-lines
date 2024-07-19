@@ -14,6 +14,8 @@ The Sweep Line algorithm operates by simulating a line that progressively scans 
 
 When a segment’s starting point is encountered, it is added to the active segments tree. The algorithm checks for potential intersections with its immediate predecessor and successor in the tree. When a segment’s ending point is encountered, it’s removed from the active segments tree. The algorithm checks for a potential intersection between its previous and following neighbor in the tree. If an intersection event is encountered, the intersecting segments are modified by swapping their position in the tree. Additionally, the algorithm checks for potential intersections between the modified segments and their new neighbors in the tree. If at any point intersections are found, they are added as new events to the sorted list for further processing. The specific implementation can be found in the file sweepLines.py. The solution assumes that no line segment of the input is vertical and that no three input segments intersect at the same point.
 
+![image](https://github.com/user-attachments/assets/e7d15b1f-9d2c-4942-8916-461612b23940)
+
 Compared to the naive approach that checks every segment pair for intersections, the Sweep Line algorithm avoids redundant computations by strategically processing events and using the sorted data structures. This approach offers significant efficiency gains, particularly for scenarios involving a large number of line segments, which I am going to test with the following experiments.
 
 ## Experiments
