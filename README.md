@@ -7,6 +7,8 @@ The field of computational geometry focuses on the design and analysis of algori
 
 The segment intersection problem involves determining all the points at which two or more of a given set of line segments intersect. This problem can be particularly challenging when the data set is large, requiring the algorithm to be not only correct, but also highly efficient. The segments are defined in a two-dimensional plane, each represented by a pair of endpoints. The primary goal is to identify pairs of segments that intersect and the points at which these intersections occur. 
 
+<img width="520" alt="image" src="https://github.com/user-attachments/assets/095807d3-faa3-4104-9f86-6072098ab45a">
+
 The sweep line algorithm reduces the complexity of the problem by transforming the global geometric problem into a series of simpler, localized problems. This approach systematically processes events associated with segment endpoints, maintaining a dynamically updated set of active segments that have potential intersections with the sweep line - a vertical line that traverses the plane from left to right.
 
 ## Implementation
